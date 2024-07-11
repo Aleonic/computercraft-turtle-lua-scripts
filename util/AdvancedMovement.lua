@@ -92,7 +92,7 @@ function AdvancedMovement:checkFuelReserve()
 end
 
 function AdvancedMovement:up()
-    if AdvancedMovement:_checkFuelReserve(self) and then
+    if AdvancedMovement:_checkFuelReserve(self) then
         self._stack:_push(self._stack, "d")
         self._steps = self._steps + 1
         return turtle.up()
@@ -101,7 +101,7 @@ function AdvancedMovement:up()
 end
 
 function AdvancedMovement:down()
-    if AdvancedMovement:_checkFuelReserve(self) and then
+    if AdvancedMovement:_checkFuelReserve(self) then
         self._stack:_push(self._stack, "u")
         self._steps = self._steps + 1
         return turtle.down()
@@ -120,7 +120,7 @@ function AdvancedMovement:right()
 end
 
 function AdvancedMovement:forward()
-    if AdvancedMovement:_checkFuelReserve(self) and then
+    if AdvancedMovement:_checkFuelReserve(self) then
         self._stack:_push(self._stack, "b")
         self._steps = self._steps + 1
         return turtle.forward()
@@ -129,7 +129,7 @@ function AdvancedMovement:forward()
 end
 
 function AdvancedMovement:backward()
-    if AdvancedMovement:_checkFuelReserve(self) and then
+    if AdvancedMovement:_checkFuelReserve(self) then
         self._stack:_push(self._stack, "f")
         self._steps = self._steps + 1
         return turtle.back()
