@@ -9,7 +9,7 @@ function GridMovementVertPlane.new(x, y)
     return instance
 end
 
-function GridMovementVertPlane:move(x, y)
+function GridMovementVertPlane:move(self, x, y)
 
     --Assumes robot faces forward.
 

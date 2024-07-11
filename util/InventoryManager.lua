@@ -57,6 +57,7 @@ function InventoryManager:deposit(slot)
     return turtle.drop()
 end
 
+-- function overload with more parameters
 function InventoryManager:deposit(slot, itemCount)
     if not turtle.select(slot) then
         return false
@@ -105,7 +106,6 @@ function InventoryManager:getItem(item_search_name)
     end
 
     if not foundItemSlot then
-        printError("ERROR: Item not found.")
         return false
     end
 

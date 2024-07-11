@@ -1,0 +1,3 @@
+require("CustomCook")
+
+main()

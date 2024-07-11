@@ -83,6 +83,10 @@ function AdvancedMovement:getStepsTaken()
     return self._steps
 end
 
+function AdvancedMovement:getStepsTaken(optionalSteps)
+    return self._steps + optionalSteps
+end
+
 function AdvancedMovement:checkFuelReserve()
     return AdvancedMovement:_checkFuelReserve(self)
 end
